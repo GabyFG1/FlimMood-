@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>FilmMood</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<style>
+body {
+    background-color: #f1ece5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 70px;
+}
+nav {
+    background-color: #614530;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+        padding: 10px;
+    z-index: 1000;
+    text-align: center;
+    height: 60px;
+    
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    color: #f1ece5;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav ul li a:hover {
+    background-color: #f1ece5;
+    color: #614530;
+    font-weight: bold;
+
+}
+h1, h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #614530;
+}
+h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifs;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #614530;
+}
+#actores, #directores, #act, #dir{
+    margin-bottom: 15px;
+}
+#reseñas .descripcion,
+#datos-curiosos .descripcion {
+    font-size: 16px;
+    color: #333;
+}
+
+.Temas li a {
+    color: #614530;
+    text-decoration: none;
+    font-weight: bold;
+}
+.Temas li a:hover {
+    background-color: #614530;
+    color: #f1ece5;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+#titulo-principal { 
+    font-size: 42px;
+}
+.descripcion {
+    font-size: 16px;
+    font-family: Verdana;   
+}
+.Temas {
+    font-size: 16px;
+    font-family: Verdana; 
+    color:#614530; 
+}
+.sobre-mi {
+    font-size: 16px;
+    font-family: Verdana;
+}
+footer {
+    background-color:#614530;
+    color: #f1ece5;
+    font-size: 12px;
+    font-family: Verdana; 
+    text-align: center;
+    padding: 10px;
+}
+img{
+    border-radius: 100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+th, td {
+    border: 1px solid #614530;
+    padding: 10px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+th {
+    background-color: #f1ece5;
+}
+section, aside {
+    padding: 15px;
+    margin: 20px;
+    border: 2px solid #614530;
+    border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#reseñas">RESEÑAS</a></li>
+        <li><a href="#datos-curiosos">DATOS CURIOSOS</a></li>
+        <li><a href="#destacados">DESTACADOS</a></li>
+                <a href="#sobre-mi" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+  SOBRE MI
+</a>
+    </ul>
+</nav>
+
+<header id="titulo-principal">
+    <h1>FilmMood</h1>
+</header>
+
+<section id="inicio">
+    <article>
+        <h2>Descripción del sitio</h2>
+        <p class="descripcion">
+            Este es un espacio para hablar de cine de forma sencilla, cercana y divertida.
+            Aquí encontrarás recomendaciones de películas, reseñas honestas, datos curiosos,
+            análisis ligeros y todo lo necesario para disfrutar más lo que vemos en pantalla.
+        </p>
+    </article>
+
+    <article>
+        <h2>Temas Principales</h2>
+        <ol class="Temas">
+            <li><a href="#reseñas">Reseñas de películas</a></li>
+            <li><a href="#datos-curiosos">Datos curiosos del cine</a></li>
+            <li><a href="#destacados">Actores y directores destacados</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+        </ol>
+    </article>
+
+    <article id="reseñas">
+        <h2>Reseñas de películas</h2>
+        <table>
+            <tr>
+                <th>Película</th>
+                <th>Año</th>
+                <th>Género</th>
+                <th>Opinión breve</th>
+            </tr>
+            <tr>
+                <td>El Viaje de Chihiro</td>
+                <td>2001</td>
+                <td>Fantasía / Animación</td>
+                <td>Visualmente hermosa y llena de emoción.</td>
+            </tr>
+            <tr>
+                <td>Titanic</td>
+                <td>1997</td>
+                <td>Romance / Drama</td>
+                <td>Clásica e inolvidable.</td>
+            </tr>
+            <tr>
+                <td>Avengers: Endgame</td>
+                <td>2019</td>
+                <td>Acción / Ciencia ficción</td>
+                <td>Épica y emocionante.</td>
+            </tr>
+            <tr>
+                <td>El Conjuro</td>
+                <td>2013</td>
+                <td>Terror</td>
+                <td>Mantiene el suspenso y asusta bien.</td>
+            </tr>
+        </table>
+    </article>
+<br>
+    <article>
+        <h2 id="datos-curiosos"> Datos curiosos del cine</h2>
+        <p>
+            El mundo del cine está lleno de curiosidades fascinantes.<strong>primera película de la historia</strong>, La salida de los obreros de la fábrica Lumière (1895), duró menos de un minuto, mientras que la película más larga jamás creada <strong>las 35 horas de duración</strong> . Un dato interesante es que el rugido del T-Rex en Jurassic Park no proviene de un dinosaurio, sino de una <strong>mezcla de sonidos de animales reales como elefantes, tigres y cocodrilos</strong>. Además, las palomitas se volvieron populares en los cines durante la Gran Depresión, ya que eran económicas y fáciles de vender. Por último, la icónica frase <strong>“I’ll be back”</strong> Terminator casi no se usa, porque Arnold Schwarzenegger no quería decirla así… y terminó convirtiéndose en una de las líneas más famosas del cine.
+        </p>
+    </article>
+
+    <article>
+         <section>
+        <h2 id="destacados">Actores y directores destacados del cine</h2>
+
+        <p>
+            El mundo del cine ha sido moldeado por artistas cuyo talento, creatividad e influencia han dejado una marca 
+            permanente. Tanto actores como directores han aportado estilos únicos, interpretaciones memorables y obras que 
+            cambiaron la historia del séptimo arte. A continuación, algunos de los nombres más relevantes:
+        </p>
+
+        <h3> Actores destacados</h3>
+        <ul id="actores">
+            <li id="act"><b>Meryl Streep:</b> Considerada una de las mejores actrices de todos los tiempos, conocida por su impresionante capacidad de transformación y por ser la artista con más nominaciones al Óscar en la historia.</li>
+
+            <li id="act"><b>Leonardo DiCaprio:</b> Reconocido por su compromiso extremo con cada personaje, desde <i>El Renacido</i> hasta <i>Titanic</i>. Su carrera combina grandes taquillazos con interpretaciones profundas y premiadas.</li>
+
+            <li id="act"><b>Morgan Freeman:</b> Actor icónico por su voz inconfundible y presencia poderosa. Ha protagonizado cintas clásicas como <i>Sueño de libertad</i> y <i>Se7en</i>.</li>
+
+            <li id="act"><b>Natalie Portman:</b> Ganadora del Óscar, destacada por su versatilidad en películas como <i>El cisne negro</i>, <i>V de Venganza</i> y <i>Star Wars</i>.</li>
+
+            <li id="act"><b>Tom Hanks:</b> Uno de los actores más queridos, conocido por personajes inolvidables en <i>Forrest Gump</i>, <i>Náufrago</i> y <i>Salvar al soldado Ryan</i>.</li>
+        </ul>
+<br>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Gaby/maryl.jpeg" class="d-block w-100" alt="..." width="50px"height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Meryl Streep</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Gaby/leonardo.jpg" class="d-block w-100" alt="..." width="50px" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Leonardo DiCaprio</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Gaby/morgan.jpg" class="d-block w-100" alt="..."width="50px" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Morgan Freeman</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Gaby/natalie.jpg" class="d-block w-100" alt="..." width="50px" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Natalie Portman</h5>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="Gaby/tom.jpg" class="d-block w-100" alt="..." width="100px" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Tom Hanks</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+        <h3>Directores destacados</h3>
+        <ul id="directores">
+            <li id="dir"><b>Steven Spielberg:</b> Uno de los directores más influyentes. Ha creado clásicos como <i>Jurassic Park</i>, <i>Indiana Jones</i>, <i>E.T.</i> y <i>Salvar al soldado Ryan</i>.</li>
+
+            <li id="dir"><b>Martin Scorsese:</b> Maestro del cine criminal y psicológico. Destaca en obras como <i>Taxi Driver</i>, <i>Goodfellas</i> y <i>El lobo de Wall Street</i>.</li>
+
+            <li id="dir"><b>Christopher Nolan:</b> Famoso por historias complejas y efectos prácticos. Director de <i>Inception</i>, <i>Interestelar</i> y la trilogía <i>The Dark Knight</i>.</li>
+
+            <li id="dir"><b>Quentin Tarantino:</b> Conocido por diálogos intensos, violencia estilizada y referencias culturales en <i>Pulp Fiction</i> y <i>Kill Bill</i>.</li>
+
+            <li id="dir"><b>Greta Gerwig:</b> Directora contemporánea destacada por <i>Lady Bird</i>, <i>Little Women</i> y <i>Barbie</i>, reconocida por su sensibilidad y visión fresca.</li>
+        </ul>
+<br>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Gaby/steven.jpg" class="d-block w-100" alt="..." width="50px"height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Steven Spielberg</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Gaby/martin.jpg" class="d-block w-100" alt="..." width="50px" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Martin Scorsese</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Gaby/christopher.jpg" class="d-block w-100" alt="..."width="50px" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Christopher Nolan</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Gaby/Tarantino.jpg" class="d-block w-100" alt="..." width="50px" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Quentin Tarantino</h5>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="Gaby/greta.jpg" class="d-block w-100" alt="..." width="100px" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Greta Gerwig</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+    </article>
+</section>
+
+<aside id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p class="sobre-mi">
+        Soy Gabriela pero me gusta que me digan Gaby. Vivo en Cali, tengo 16 años, amo los animales, 
+        me encantan los perritos y disfruto muchísimo ver películas.
+    </p>
+
+    <img src="Gaby/gaby.jpg" width="200";>
+    <footer>Gaby Flórez — Skolmi • Correo: gabyflorez@gmail.com • Contacto: @gabyflorezzz</footer>
+</aside>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
